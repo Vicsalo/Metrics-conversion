@@ -43,3 +43,9 @@ def convert_to_storage_unit(self, i_value_in_this_unit):
             return QuantitativeState.value_per_second(
                 source_value, source_period)
         return round(source_value * (target_period / source_period)) 
+
+
+
+There is a program in Python called Pint that you add using the code:
+$ pip install -U pint
+and it is also on GitHub
