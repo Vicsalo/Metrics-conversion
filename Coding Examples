@@ -87,3 +87,9 @@ github.com/hgrecco/pint.git
 
 
 Code example written out from Youtube video:
+def print_menu():
+print{'1. Kilometers to Miles'}
+print{'2. Miles to Kilometers'}
+
+def km_miles():
+km = input('Enter a distance in kilometers: ')
