@@ -20,6 +20,10 @@ def convert_to_storage_unit(self, i_value_in_this_unit):
         """
         return self.unit.ConvertToStorageUnit(i_value_in_this_unit) 
         
+        
+        
+        
+        
         def convert_unit(source_unit, target_unit, source_value,
                      source_period=None, target_period=None):
         """Convert value per unit from source to target unit. If a unit is
@@ -43,6 +47,11 @@ def convert_to_storage_unit(self, i_value_in_this_unit):
             return QuantitativeState.value_per_second(
                 source_value, source_period)
         return round(source_value * (target_period / source_period)) 
+     
+     
+     
+     
+     
      
 def calcPounds (kilogram1, kilogram2, kilogram3, kilogram4, kilogram5,\
                kilogram6, kilogram7, kilogram8, kilogram9, kilogram10):
@@ -80,10 +89,17 @@ def printconvertedresults(kilogram1, kilogram2, kilogram3, kilogram4, kilogram5,
 
 
 
+
+
+
+
 There is a program in Python called Pint that you add using the code:
 $ pip install -U pint
 and it is also on GitHub
 github.com/hgrecco/pint.git
+
+
+
 
 
 Code example written out from Youtube video:
