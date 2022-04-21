@@ -47,7 +47,19 @@ def convert_to_storage_unit(self, i_value_in_this_unit):
 def calcPounds (kilogram1, kilogram2, kilogram3, kilogram4, kilogram5,\
                kilogram6, kilogram7, kilogram8, kilogram9, kilogram10):
    
-               
+pound1 = kilogram1 * 0.453592
+pound2 = kilogram2 * 0.453592
+pound3 = kilogram3 * 0.453592
+pound4 = kilogram4 * 0.453592
+pound5 = kilogram5 * 0.453592
+pound6 = kilogram6 * 0.453592
+pound7 = kilogram7 * 0.453592
+pound8 = kilogram8 * 0.453592
+pound9 = kilogram9 * 0.453592
+pound10 = kilogram10 * 0.453592
+
+return pound1, pound2, pound3, pound4, pound5,\
+     pound6, pound7, pound8, pound9, pound10                
                
 
 
