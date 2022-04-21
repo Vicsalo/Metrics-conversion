@@ -1,0 +1,45 @@
+def convert_to_storage_unit(self, i_value_in_this_unit):
+        """
+        .. note::
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+                | o Func ConvertToStorageUnit(double iValueInThisUnit) As
+                | double
+                | 
+                |     Convert the initial value in its equivalent in storage
+                |     unit.
+                | 
+                |     Parameters:
+                | 
+                |         iValueInThisUnit
+                |             The initial value in the current unit. 
+                |         oValueInStorageUnit
+                |             The final value in the corresponding storage unit.
+
+        :param float i_value_in_this_unit:
+        :return: float
+        """
+        return self.unit.ConvertToStorageUnit(i_value_in_this_unit) 
+        
+        def convert_unit(source_unit, target_unit, source_value,
+                     source_period=None, target_period=None):
+        """Convert value per unit from source to target unit. If a unit is
+        absolute, total timedelta period has to be provided. If a unit is a
+        month or a year, it is recommended to pass timedelta period object
+        directly, if not provided, the approximation will be used.
+        """
+        if (target_unit == 'absolute' and not target_period) or \
+           (source_unit == 'absolute' and not source_period):
+                raise ValueError('Absolute period needs to be provided.')
+                return
+        if not source_period:
+            source_period = QuantitativeState._get_period_from_unit(
+                source_unit)
+        if not target_period:
+            target_period = QuantitativeState._get_period_from_unit(
+                target_unit)
+        if source_unit == 'second':
+            return QuantitativeState.from_seconds(source_value, target_period)
+        if target_unit == 'second':
+            return QuantitativeState.value_per_second(
+                source_value, source_period)
+        return round(source_value * (target_period / source_period)) 
