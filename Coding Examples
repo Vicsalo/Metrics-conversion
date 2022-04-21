@@ -125,3 +125,16 @@ if choice == '1':
 km_miles()
 if choice == '2':
 miles_km()
+
+
+Simple way to do a converion is to use a dictionary with conversion factors and a function that calls them:
+Ex:
+def convert_SI(val, unit_in, unit_out):
+    SI = {'mm':0.001, 'cm':0.01, 'm':1.0, 'km':1000.}
+    return val*SI[unit_in]/SI[unit_out]
+    >>> convert_SI(1, 'm', 'km')
+0.001
+>>> convert_SI(1, 'km', 'm')
+1000.0
+>>> convert_SI(1, 'cm', 'm')
+0.01
