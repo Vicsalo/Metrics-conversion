@@ -43,6 +43,12 @@ def convert_to_storage_unit(self, i_value_in_this_unit):
             return QuantitativeState.value_per_second(
                 source_value, source_period)
         return round(source_value * (target_period / source_period)) 
+     
+def calcPounds (kilogram1, kilogram2, kilogram3, kilogram4, kilogram5,\
+               kilogram6, kilogram7, kilogram8, kilogram9, kilogram10):
+   
+               
+               
 
 
 
