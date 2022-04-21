@@ -99,7 +99,13 @@ print('Distance in miles: (0)'.formate(miles))
 def miles_km():
 miles=float(input('Enter a distance in miles: '))
 km = miles * 1.609
-print(km)
+print('Distance in kilometers: (0)'.formate(km))
 
 print_menu()
+
+Choice = input('Which conversion would you like to do?: ')
+
+if choice == '1':
 km_miles()
+if choice == '2':
+miles_km()
