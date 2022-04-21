@@ -50,3 +50,6 @@ There is a program in Python called Pint that you add using the code:
 $ pip install -U pint
 and it is also on GitHub
 github.com/hgrecco/pint.git
+
+
+Code example written out from Youtube video:
