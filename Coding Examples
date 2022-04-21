@@ -61,6 +61,22 @@ pound10 = kilogram10 * 0.453592
 return pound1, pound2, pound3, pound4, pound5,\
      pound6, pound7, pound8, pound9, pound10                
                
+def askforweight():
+kilogram1 = float(input("Please enter weight in kilogram: "))
+kilogram2 = float(input("Please eneter weight in kilogram:"))
+kilogram3 = float(input("Please enter weight in kilogram:"))
+kilogram4 = float(input("Please enter weight in kilogram:"))
+kilogram5 = float(input("Please enter weight in kilogram:"))
+kilogram6 = float(input("Please enter weight in kilogram:"))
+kilogram7 = float(input("Please enter weight in kilogram:"))
+kilogram8 = float(input("Please enter weight in kilogram:"))
+kilogram9 = float(input("Please enter weight in kilogram:"))
+kilogram10 = float(input("Please enter weight in kilogram:"))
+
+return kilogram1, kilogram2, kilogram3, kilogram4, kilogram5,\
+       kilogram6, kilogram7, kilogram8, kilogram9, kilogram10,
+
+def printconvertedresults(kilogram1, kilogram2, kilogram3, kilogram4, kilogram5, kilogram6, kilogram7,kilogram8,kilogram9,kilogram10)
 
 
 
