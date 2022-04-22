@@ -99,6 +99,12 @@ print(str( kilogram1)+ "\t"+calcPounds(kilogram1),
      (str(kilogram9 + "\t" + calcPounds(kilogram9),
      (str(kilogram10 + "\t" + calcPounds(kilogram10),
 
+def main():
+     kilogram1, kilogram2, kilogram3, kilogram4, kilogram5,\
+     kilogram6, kilogram7, kilogram8, kilogram9, kilogram10 = askForWeight()
+  print("")
+  printconvertedresults(kilogram1, kilogram2, kilogram3, kilogram4, kilogram5,\
+                         kilogram6, kilogram7,kilogram8, kilogram9, kilogram10) 
 
 
 
