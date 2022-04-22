@@ -106,7 +106,8 @@ def main():
   printconvertedresults(kilogram1, kilogram2, kilogram3, kilogram4, kilogram5,\
                          kilogram6, kilogram7,kilogram8, kilogram9, kilogram10) 
 
-
+  print( askforweight, "kilogram converted to pounds is", printconvertedresults(kilogram1, kilogram2, kilogram3, kilogram4, kilogram5)\
+                                                                                 kilogram6, kilogram7, kilogram8, kilogram9, kilogram9, kilogram10)
 
 
 
