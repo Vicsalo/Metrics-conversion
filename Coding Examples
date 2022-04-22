@@ -87,6 +87,17 @@ return kilogram1, kilogram2, kilogram3, kilogram4, kilogram5,\
 
 def printconvertedresults(kilogram1, kilogram2, kilogram3, kilogram4, kilogram5, kilogram6, kilogram7,kilogram8,kilogram9,kilogram10)
 
+print("kilograms\tpounds")
+print(str( kilogram1)+ "\t"+calcPounds(kilogram1),
+     (str(kilogram2) + "\t" + calcPounds(kilogram2),
+     (str(kilogram3 + "\t" + calcPounds(kilogram3),
+     (str(kilogram4 + "\t" + calcPounds(kilogram4),
+     (str(kilogram5 + "\t" + calcPounds(kilogram5),
+     (str(kilogram6 + "\t" + calcPounds(kilogram6),
+     (str(kilogram7 + "\t" + calcPounds(kilogram7),
+     (str(kilogram8 + "\t" + calcPounds(kilogram8),
+     (str(kilogram9 + "\t" + calcPounds(kilogram9),
+     (str(kilogram10 + "\t" + calcPounds(kilogram10),
 
 
 
